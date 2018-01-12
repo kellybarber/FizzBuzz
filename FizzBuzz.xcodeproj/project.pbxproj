@@ -12,8 +12,8 @@
 		A22F11A820097873000070A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22F11A620097873000070A4 /* Main.storyboard */; };
 		A22F11AA20097873000070A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22F11A920097873000070A4 /* Assets.xcassets */; };
 		A22F11AD20097873000070A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22F11AB20097873000070A4 /* LaunchScreen.storyboard */; };
-		A22F11B820097873000070A4 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F11B720097873000070A4 /* FizzBuzzTests.swift */; };
 		A22F11C320097873000070A4 /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F11C220097873000070A4 /* FizzBuzzUITests.swift */; };
+		A22F11D1200979DB000070A4 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F11D0200979DB000070A4 /* BrainTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +42,11 @@
 		A22F11AC20097873000070A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A22F11AE20097873000070A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22F11B320097873000070A4 /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A22F11B720097873000070A4 /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		A22F11B920097873000070A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22F11BE20097873000070A4 /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22F11C220097873000070A4 /* FizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUITests.swift; sourceTree = "<group>"; };
 		A22F11C420097873000070A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A22F11D0200979DB000070A4 /* BrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 		A22F11B620097873000070A4 /* FizzBuzzTests */ = {
 			isa = PBXGroup;
 			children = (
-				A22F11B720097873000070A4 /* FizzBuzzTests.swift */,
 				A22F11B920097873000070A4 /* Info.plist */,
+				A22F11D0200979DB000070A4 /* BrainTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -197,6 +197,7 @@
 					};
 					A22F11B220097873000070A4 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A22F119E20097873000070A4;
 					};
@@ -268,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A22F11B820097873000070A4 /* FizzBuzzTests.swift in Sources */,
+				A22F11D1200979DB000070A4 /* BrainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,11 +456,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KellyBarber.FizzBuzzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FizzBuzz.app/FizzBuzz";
@@ -471,6 +474,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
