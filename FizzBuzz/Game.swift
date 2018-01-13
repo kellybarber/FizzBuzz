@@ -16,7 +16,7 @@ class Game {
         score = 0
     }
     
-    func play() {
+    func play(move: String) {
         return score += 1
     }
     
