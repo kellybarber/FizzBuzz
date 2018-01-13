@@ -26,6 +26,14 @@ class Brain {
         return isDivisibleBy(divisor: 15, number: number)
     }
     
+    func check(number: Int) -> String {
+        if number % 3 == 0 {
+            return "Fizz"
+        } else {
+            return "Buzz"
+        }
+    }
+    
 }
 
 
