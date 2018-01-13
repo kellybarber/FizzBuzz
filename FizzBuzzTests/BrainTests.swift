@@ -22,7 +22,7 @@ class BrainTests: XCTestCase {
     }
     
     func testIsDivisibleByThree() {
-        let brain  = Brain()
+        let brain = Brain()
         let result = brain.isDivisibleByThree(number: 3)
         XCTAssertEqual(result, true)
     }
