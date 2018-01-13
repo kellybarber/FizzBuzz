@@ -10,6 +10,8 @@ import Foundation
 
 class Brain {
     
+
+    
     func isDivisibleByThree(number: Int) -> Bool {
         if number % 3 == 0 {
             return true
@@ -26,4 +28,18 @@ class Brain {
         }
     }
     
+    func isDivisibleByFifteen(number: Int) -> Bool {
+        if number % 15 == 0 {
+            return true
+        } else {
+            return false
+        }
+    }
+    
 }
+
+
+
+
+
+
