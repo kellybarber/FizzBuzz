@@ -16,4 +16,8 @@ class Game {
         score = 0
     }
     
+    func play() {
+        return score += 1
+    }
+    
 }
