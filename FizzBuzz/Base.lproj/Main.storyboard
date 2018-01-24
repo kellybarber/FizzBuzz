@@ -23,9 +23,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcL-Cd-c6E">
-                                <rect key="frame" x="248" y="617" width="111" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcL-Cd-c6E">
+                                <rect key="frame" x="256" y="607" width="99" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="EeS-sy-CDP"/>
+                                    <constraint firstAttribute="height" constant="40" id="ja6-AZ-ppP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="Play Again">
                                     <color key="titleColor" red="0.97254901960784312" green="0.95294117647058818" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -33,6 +36,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.72156862745098038" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hcL-Cd-c6E" secondAttribute="bottom" constant="20" id="Z4a-HA-NSU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hcL-Cd-c6E" secondAttribute="trailing" constant="20" id="xGC-G7-W1k"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
