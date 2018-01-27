@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,9 +44,28 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQn-Yn-Tgr">
                                 <rect key="frame" x="40" y="186" width="295" height="295"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8TM-MY-jDr">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="295"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iPB-FJ-d49">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="295"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY6-eM-AfK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="295"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jQn-Yn-Tgr" secondAttribute="height" multiplier="1:1" id="2Ic-Ar-rIR"/>
+                                    <constraint firstItem="8TM-MY-jDr" firstAttribute="width" secondItem="jQn-Yn-Tgr" secondAttribute="width" id="5E2-As-La0"/>
+                                    <constraint firstItem="8TM-MY-jDr" firstAttribute="top" secondItem="jQn-Yn-Tgr" secondAttribute="top" multiplier="0.48" id="MhW-uh-Lcd"/>
+                                    <constraint firstItem="8TM-MY-jDr" firstAttribute="height" secondItem="jQn-Yn-Tgr" secondAttribute="height" id="Wbt-Jg-rmS"/>
+                                    <constraint firstItem="8TM-MY-jDr" firstAttribute="leading" secondItem="jQn-Yn-Tgr" secondAttribute="leading" multiplier="0.48" id="vs1-F3-5gM"/>
                                 </constraints>
                             </view>
                         </subviews>
