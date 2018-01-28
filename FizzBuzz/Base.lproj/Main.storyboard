@@ -44,21 +44,54 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9H-Ef-Tqb">
-                                <rect key="frame" x="39" y="185" width="296" height="296"/>
+                                <rect key="frame" x="40" y="186" width="295" height="295"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-DK-GnF">
-                                        <rect key="frame" x="0.0" y="0.0" width="142" height="142"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="141.5" height="141.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqH-hO-K5r">
+                                        <rect key="frame" x="153.5" y="153.5" width="141.5" height="141.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" image="space" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nn2-Qi-2cU">
+                                        <rect key="frame" x="0.0" y="153.5" width="141.5" height="141.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" image="lightning" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lby-BS-cOq">
+                                        <rect key="frame" x="153.5" y="0.0" width="141.5" height="141.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Nn2-Qi-2cU" firstAttribute="width" secondItem="3Gc-DK-GnF" secondAttribute="width" id="4D5-6R-jbu"/>
+                                    <constraint firstItem="Nn2-Qi-2cU" firstAttribute="leading" secondItem="b9H-Ef-Tqb" secondAttribute="leading" id="6nb-gh-lev"/>
                                     <constraint firstItem="3Gc-DK-GnF" firstAttribute="top" secondItem="b9H-Ef-Tqb" secondAttribute="top" id="7oP-ZP-uZv"/>
                                     <constraint firstAttribute="width" secondItem="b9H-Ef-Tqb" secondAttribute="height" multiplier="1:1" id="KvJ-UG-Pdg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nn2-Qi-2cU" secondAttribute="bottom" id="NnO-h5-bqr"/>
+                                    <constraint firstItem="Lby-BS-cOq" firstAttribute="top" secondItem="b9H-Ef-Tqb" secondAttribute="top" id="QYd-kZ-kdd"/>
+                                    <constraint firstAttribute="bottom" secondItem="sqH-hO-K5r" secondAttribute="bottom" id="To6-we-H9J"/>
+                                    <constraint firstItem="Lby-BS-cOq" firstAttribute="height" secondItem="3Gc-DK-GnF" secondAttribute="height" id="VGj-bS-AqC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lby-BS-cOq" secondAttribute="trailing" id="Xk3-vW-uT9"/>
+                                    <constraint firstItem="Lby-BS-cOq" firstAttribute="width" secondItem="3Gc-DK-GnF" secondAttribute="width" id="ZNk-Ym-I9F"/>
+                                    <constraint firstAttribute="trailing" secondItem="sqH-hO-K5r" secondAttribute="trailing" id="atQ-3C-ef7"/>
+                                    <constraint firstItem="Nn2-Qi-2cU" firstAttribute="height" secondItem="3Gc-DK-GnF" secondAttribute="height" id="boV-AR-7o4"/>
                                     <constraint firstItem="3Gc-DK-GnF" firstAttribute="height" secondItem="b9H-Ef-Tqb" secondAttribute="height" multiplier="0.48" id="dhA-bk-cwx"/>
                                     <constraint firstItem="3Gc-DK-GnF" firstAttribute="width" secondItem="b9H-Ef-Tqb" secondAttribute="width" multiplier="0.48" id="eKd-gd-52A"/>
+                                    <constraint firstItem="sqH-hO-K5r" firstAttribute="width" secondItem="3Gc-DK-GnF" secondAttribute="width" id="sAC-KT-zFZ"/>
+                                    <constraint firstItem="sqH-hO-K5r" firstAttribute="height" secondItem="3Gc-DK-GnF" secondAttribute="height" id="yXn-I2-NBE"/>
                                     <constraint firstItem="3Gc-DK-GnF" firstAttribute="leading" secondItem="b9H-Ef-Tqb" secondAttribute="leading" id="zfC-dL-eqb"/>
                                 </constraints>
                             </view>
@@ -83,5 +116,8 @@
     </scenes>
     <resources>
         <image name="button_border" width="400" height="400"/>
+        <image name="champagne" width="49" height="50"/>
+        <image name="lightning" width="29" height="50"/>
+        <image name="space" width="47" height="50"/>
     </resources>
 </document>
